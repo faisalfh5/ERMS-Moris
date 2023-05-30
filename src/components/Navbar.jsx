@@ -43,7 +43,7 @@ const Navbar = () => {
     console.log("here");
     getAddress();
     // }
-  }, []);
+  }, [walletAddress]);
 
   return (
     <header className="header_section">

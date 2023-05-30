@@ -1,5 +1,5 @@
 {
-  "address": "0xf27b733F2f1D146E14432eC9eec8f450b611f139",
+  "address": "0xE72AC8bc1A2722B0BC6AB84E43393D6B3aA18965",
 
   "abi": [
     {
@@ -154,6 +154,11 @@
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
+    },
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
     },
     {
       "inputs": [
@@ -567,13 +572,19 @@
       "type": "function"
     },
     {
-      "inputs": [],
-      "name": "owner",
-      "outputs": [
+      "inputs": [
         {
           "internalType": "address",
-          "name": "",
+          "name": "_employeeWallet",
           "type": "address"
+        }
+      ],
+      "name": "GetTotalPoint",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalpoint",
+          "type": "uint256"
         }
       ],
       "stateMutability": "view",
@@ -611,6 +622,25 @@
           "internalType": "uint8",
           "name": "",
           "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "rewardTotalPoints",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalpoint",
+          "type": "uint256"
         }
       ],
       "stateMutability": "view",

@@ -334,3 +334,20 @@ export const DeleteRewardData = async (rewardid) => {
     console.log("Something went wrong to intetract with smart contract");
   }
 };
+
+export const GetRewardPoints = async (empAddress) => {
+  try {
+    console.log("reward wallet", empAddress);
+
+    const mintInstance = await getProviderOrSigner(true);
+    console.log("mintInstance", mintInstance);
+
+    const trans = await mintInstance.GetTotalPoint(empAddress);
+
+    // eslint-disable-next-line no-undef
+    toast("Delete Employee successfully");
+    return trans;
+  } catch (error) {
+    console.log("Something went wrong to intetract with smart contract");
+  }
+};
